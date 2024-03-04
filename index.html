@@ -8,66 +8,76 @@
 <body>
 <h1>Student Form</h1>
 <form>
-    <p>
-        <label for="input_name">Full Name</label>
-        <input id="input_name" type="text" placeholder="Name here">
-    </p>
-    <p>
-        <label for="input_age">Age</label>
-        <input id="input_age" type="number" placeholder="Your age">
-    </p>
-    <p>
-        <label for="input_email">Email:</label>
-        <input id="input_email" type="email" placeholder="Email">
-    </p>
-    <p>
-        <label for="input_mobile">Mobile Number:</label>
-        <input id="input_mobile" type="tel" placeholder="Contact Number">
-    </p>
-    <p>
-        <label for="select_class">Applying for:</label>
-        <select id="select_class">
-            <optgroup label="Primary">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-            </optgroup>
-            <optgroup label="Secondary">
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </optgroup>
-        </select>
-    </p>
-    <p>
-        <h3>Gender</h3>
-        <label for="radio_male">Male</label>
-        <input id="radio_male" name="gender" type="radio" checked>
-        <label for="radio_female">Female</label>
-        <input id="radio_female" name="gender" type="radio">
-        <label for="radio_nonbinary">Non-Binary</label>
-        <input id="radio_nonbinary" name="gender" type="radio">
-    </p>
-    <p>
-        <h3>Do you need these special services?</h3>
-        <label for="checkbox_bus">School Bus</label>
-        <input id="checkbox_bus" name="checkbox1" type="checkbox">
-        <label for="checkbox_lunch">School Lunch</label>
-        <input id="checkbox_lunch" name="checkbox2" type="checkbox">
-        <label for="checkbox_housing">Student Housing</label>
-        <input id="checkbox_housing" name="checkbox3" type="checkbox">
-    </p>
-    <p>
-        <label for="textarea_comments">We'd love to hear your comments!</label><br>
-        <textarea id="textarea_comments" rows="5" cols="50" placeholder="Your comments here:"></textarea>
-    </p>
-     <p>
-        <input type="submit" value="Send">  <input type="reset" value="Clear">
-    </p>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+            <label for="input_name">Full Name</label>
+            <input id="input_name" type="text" placeholder="Name here">
+        </p>
+        <p>
+            <label for="input_age">Age</label>
+            <input id="input_age" type="number" placeholder="Your age">
+        </p>
+        <p>
+            <label for="input_email">Email:</label>
+            <input id="input_email" type="email" placeholder="Email">
+        </p>
+        <p>
+            <label for="input_mobile">Mobile Number:</label>
+            <input id="input_mobile" type="tel" placeholder="Contact Number">
+        </p>
+        <p>
+            <h3>Gender</h3>
+            <label for="radio_male">Male</label>
+            <input id="radio_male" name="gender" type="radio" checked>
+            <label for="radio_female">Female</label>
+            <input id="radio_female" name="gender" type="radio">
+            <label for="radio_nonbinary">Non-Binary</label>
+            <input id="radio_nonbinary" name="gender" type="radio">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Classes and Services</legend>
+        <p>
+            <label for="select_class">Applying for:</label>
+            <select id="select_class">
+                <optgroup label="Primary">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </optgroup>
+                <optgroup label="Secondary">
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <h3>Do you need these special services?</h3>
+            <label for="checkbox_bus">School Bus</label>
+            <input id="checkbox_bus" name="checkbox1" type="checkbox">
+            <label for="checkbox_lunch">School Lunch</label>
+            <input id="checkbox_lunch" name="checkbox2" type="checkbox">
+            <label for="checkbox_housing">Student Housing</label>
+            <input id="checkbox_housing" name="checkbox3" type="checkbox">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>How are we doing?</legend>
+        <p>
+            <label for="textarea_comments">We'd love to hear your comments!</label><br>
+            <textarea id="textarea_comments" rows="5" cols="50" placeholder="Your comments here:"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send">  <input type="reset" value="Clear">
+        </p>
+    </fieldset>
 </form>
 </body>
 </html>
